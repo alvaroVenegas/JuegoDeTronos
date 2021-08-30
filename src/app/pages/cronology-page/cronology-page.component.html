@@ -1,0 +1,29 @@
+<div class="c-detail-cronology-icons">
+    <div>
+    </div>
+    <div class="c-detail-cronology-icons__right">
+        <img class="c-detail-cronology-icons__right--home"
+            src="https://png.pngtree.com/png-vector/20190420/ourlarge/pngtree-home-vector-icon-png-image_963304.jpg"
+            alt="" routerLink="">
+        <img class="c-detail-cronology-icons__right--icon" src="../../../../assets/icon/spain 1.svg" alt="">
+        <img class="" src="../../../../assets/icon/united-kingdom 1.svg" alt="">
+    </div>
+</div>
+<div>
+    <div class="c-button">
+        <button class="c-button--int" (click)=changeOrder()>O</button>
+    </div>
+    <ngx-simplebar style="height:700px">
+        <div *ngFor="let character of characters" class="c-general">
+            <div class="c-bar c-general">
+                <p class="c-text--age"> {{character.age.age}}</p>
+                <p class="c-text-name"> {{character.age.name}}</p>
+                <img src={{character.image}} class="c-img" alt="{{character.age.name}}">
+            </div>
+        </div>
+    </ngx-simplebar>
+</div>
+<div class="c-footer">
+    <app-footer></app-footer>
+</div>
+

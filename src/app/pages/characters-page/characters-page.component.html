@@ -1,0 +1,36 @@
+<div class="container ">
+    <div class="d-flex align-item-center justify-content-between ">
+        <div>
+            <input class="c-charters__topBar" type="text" placeholder="Buscar..." [(ngModel)]="textToFilter">
+        </div>
+        <div class="c-detail-cronology-icons__right">
+            <img class="c-detail-cronology-icons__right--home"
+                src="https://png.pngtree.com/png-vector/20190420/ourlarge/pngtree-home-vector-icon-png-image_963304.jpg"
+                alt="" routerLink="">
+            <img class="c-detail-cronology-icons__right--icon" src="../../../../assets/icon/spain 1.svg" alt="">
+            <img class="" src="../../../../assets/icon/united-kingdom 1.svg" alt="">
+        </div>
+    </div>
+    <div class="c-charters__seachOverline"></div>
+
+   <div>
+        <div class="container ">
+            <ngx-simplebar data-simplebar class="c-charter__simplebarStyle">
+                <div class="row d-flex align-items-center justify-content-center ">
+                    <div *ngFor="let character of characters | filter:textToFilter"
+                        routerLink="/characters/{{character.name}}"
+                        class=" c-charters__figure col-12 col-md-6 col-lg-2">
+                        <div class="c-charter__titleContainer">
+                            <img src={{character.image}} class="c-charters__img" alt="">
+                            <div class="c-charters__title c-charters__title--centrado ">
+                                <h4>{{character.name}} </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ngx-simplebar>
+        </div>
+        <app-footer></app-footer>
+    </div>
+</div>
+

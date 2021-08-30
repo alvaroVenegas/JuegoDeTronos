@@ -1,0 +1,31 @@
+@import '~bootstrap/scss/bootstrap-grid';
+@import './styles/settings/colors.settings';
+@import './styles/elements/body.elements';
+
+
+
+@font-face{
+    font-family:'GOT';
+    src: url('../src/assets/Game\ of\ Thrones.ttf')
+}
+@font-face{
+    font-family:'LATO';
+    src: url('../src/assets/Lato-Regular.ttf')
+}
+@font-face{
+    font-family:'GEORGIA';
+    src: url('../src/assets/georgia-4.ttf')
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: 'GOT';
+}
+
+

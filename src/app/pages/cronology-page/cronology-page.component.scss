@@ -1,0 +1,78 @@
+
+.c-general{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+.c-button{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 50px;
+	&--int{
+		width: 59px;
+		height: 59px;
+		border-radius: 50%;
+		font-family: 'GEORGIA';
+		background-color: black;
+		color: white;
+		border: 3px solid white;
+	}
+}
+.c-bar{
+	border-top: 3px solid white;
+	width: 366px;
+	margin-bottom: 10px;
+}
+.c-text{
+	color: white;
+	&--age{
+		font-family: 'GEORGIA';
+		font-size: 24px;
+	}
+	&--name{
+		font-family: 'GOT';
+		font-size: 18px;
+	}
+}
+.c-img{
+	object-position: top;
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+	border-radius: 50%;
+}
+.c-detail-cronology-icons{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 26px 150px 76px 150px;
+    &__left{
+        font-size: 24px;
+        font-family: 'LATO';
+        text-align: center;
+        display: flex;
+        align-items: center;
+        &--icon{
+            padding-left:16px ;
+        }
+    }
+    &__right{
+        padding-right: 280px;
+        &--icon{
+            padding-left:29px ;
+            padding-right:29px ;
+        }
+        &--home{
+            width: 62px;
+            height: 62px;
+        }
+    }
+}
+.c-footer{
+	padding-left: 150px;
+	padding-right: 150px;
+}
+
+
+

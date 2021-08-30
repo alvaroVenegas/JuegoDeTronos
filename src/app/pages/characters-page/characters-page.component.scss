@@ -1,0 +1,124 @@
+.c-charters__topBar{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    background-color: black;
+    border: 0px;
+    color: white;
+    outline: none;
+}
+.test{
+    width: 25px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.c-charters__seachOverline{
+height: 2px;
+background-color: white;
+margin-right: 800px;
+margin-bottom: 20px;
+margin-left: 60px;
+}
+.c-charters__icon{
+    margin-right: 65px;
+
+}
+.c-charters__iconSize{
+    width: 35px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 60px;
+    margin-left: 5px;
+}
+.c-gallery__searchBar{
+  block-size: 30px;
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+.c-charters__figure {
+width: 248px;
+height: 320px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+.c-charters__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.img {
+    opacity: 1;
+  }
+  img:hover {
+    opacity: 0.5;
+  }
+  .c-charter__titleContainer{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    height: 300px;
+}
+.c-charters__title{
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+.c-charters__title--centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+h4 {
+    opacity: 0;
+  }
+  h4:hover {
+    opacity: 1.0;
+  }
+  .c-detail-cronology-icons{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 26px 150px 76px 150px;
+    &__left{
+        font-size: 24px;
+        font-family: 'LATO';
+        text-align: center;
+        display: flex;
+        align-items: center;
+        &--icon{
+            padding-left:16px ;
+        }
+    }
+    &__right{
+       
+        &--icon{
+            padding-left:29px ;
+            padding-right:29px ;
+        }
+        &--home{
+            width: 62px;
+            height: 62px;
+        }
+    }
+}
+.c-charter__simplebarStyle {
+    margin: 2rem auto;
+    height: 630px;
+    width:100%;
+    overflow:auto;
+    padding:0 1rem;
+}
+    
+       
+    

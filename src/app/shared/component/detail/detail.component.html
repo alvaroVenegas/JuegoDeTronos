@@ -1,0 +1,72 @@
+<div class="c-detail-character-icons">
+    <div class="c-detail-character-icons__left" routerLink="/characters">
+        <img class="" src="../../../../assets/icon/Vector.svg" alt="">
+        <span class="c-detail-character-icons__left--icon">Return</span>
+    </div>
+    <div class="c-detail-character-icons__right">
+        <img class="c-detail-character-icons__right--home"
+            src="https://png.pngtree.com/png-vector/20190420/ourlarge/pngtree-home-vector-icon-png-image_963304.jpg"
+            alt="" routerLink="">
+        <img class="c-detail-character-icons__right--icon" src="../../../../assets/icon/spain 1.svg" alt="">
+        <img class="" src="../../../../assets/icon/united-kingdom 1.svg" alt="">
+    </div>
+</div>
+
+<div *ngIf="character && house" class="c-detail-character">
+    <div class="c-detail-character__header">
+        <img src="{{character.image}}" alt="{{character.name}}" class="c-detail-character__header--img">
+        <p>{{character.name}}</p>
+    </div>
+    <div class="c-detail-character--padding">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-2 c-detail-character__info">
+                <p class="c-detail-character__info--title">House</p>
+                <img src="{{house[0].logoURL}}" alt="{{house[0].name}}" routerLink="/houses/{{house[0].name}}"
+                    class="c-detail-character__info--img">
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-2">
+                <p class="c-detail-character__info--title">Allegiances</p>
+                <div class="c-detail-character__info--box">
+                    <ngx-simplebar style="height:100%">
+                        <div *ngFor="let allegiance of character.allegiances" class="c-detail-character__info--text">
+                            {{allegiance}}</div>
+                    </ngx-simplebar>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-2">
+                <p class="c-detail-character__info--title">Appearances</p>
+                <div class="c-detail-character__info--box">
+                    <ngx-simplebar style="height:100%" class="" forceVisible="true | y">
+                        <div *ngFor="let appearance of character.appearances" class="c-detail-character__info--text">
+                            {{appearance}}</div>
+                    </ngx-simplebar>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-2">
+                <p class="c-detail-character__info--title">Father</p>
+                <div class="c-detail-character__info--box">
+                    <p class="c-detail-character__info--text">{{character.father}}</p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-2">
+                <p class="c-detail-character__info--title">Sibling</p>
+                <div class="c-detail-character__info--box">
+                    <ngx-simplebar style="height:100%" class="" forceVisible="true | y">
+                        <div *ngFor="let sibling of character.siblings" class="c-detail-character__info--text">
+                            {{sibling}}</div>
+                    </ngx-simplebar>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-2">
+                <p class="c-detail-character__info--title">Titles</p>
+
+                <div class="c-detail-character__info--box">
+                    <ngx-simplebar style="height:100%" class="" forceVisible="true | y">
+                        <div *ngFor="let title of character.titles" class="c-detail-character__info--text">
+                            {{title}}</div>
+                    </ngx-simplebar>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

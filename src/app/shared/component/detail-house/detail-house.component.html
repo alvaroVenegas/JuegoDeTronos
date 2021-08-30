@@ -1,0 +1,135 @@
+<div class="c-detail-house-icons">
+    <div class="c-detail-house-icons__left" routerLink="/houses">
+        <img class="" src="../../../../assets/icon/Vector.svg" alt="">
+        <span class="c-detail-house-icons__left--icon">Return</span>
+    </div>
+    <div class="c-detail-house-icons__right">
+        <img class="c-detail-house-icons__right--home"
+            src="https://png.pngtree.com/png-vector/20190420/ourlarge/pngtree-home-vector-icon-png-image_963304.jpg"
+            alt="" routerLink="">
+        <img class="c-detail-house-icons__right--icon" src="../../../../assets/icon/spain 1.svg" alt="">
+        <img class="" src="../../../../assets/icon/united-kingdom 1.svg" alt="">
+    </div>
+</div>
+
+<div *ngIf="house" class="c-detail-house">
+    <div class="c-detail-house__header">
+        <img src="{{house[0].logoURL}}" alt="{{house[0].name}}" class="c-detail-house__header--img">
+        <p>{{house[0].name}}</p>
+    </div>
+    <div class="c-detail-house--padding">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-2">
+                <p class="c-detail-house__info--title">Words</p>
+                <div class="c-detail-house__info--box">
+                    <p class="c-detail-house__info--text">{{house[0].words}}</p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-2">
+                <p class="c-detail-house__info--title">Seat</p>
+                <div class="c-detail-house__info--box">
+                    <ngx-simplebar style="height:100%">
+                        <div *ngFor="let se of house[0].seat" class="c-detail-house__info--text">
+                            {{se}}</div>
+                    </ngx-simplebar>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-2">
+                <p class="c-detail-house__info--title">Region</p>
+                <div class="c-detail-house__info--box">
+                    <ngx-simplebar style="height:100%" class="" forceVisible="true | y">
+                        <div *ngFor="let regio of house[0].region" class="c-detail-house__info--text">
+                            {{regio}}</div>
+                    </ngx-simplebar>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-2">
+                <p class="c-detail-house__info--title">Allegiances</p>
+                <div class="c-detail-house__info--box">
+                    <ngx-simplebar style="height:100%" class="" forceVisible="true | y">
+                        <div *ngFor="let alle of house[0].allegiance" class="c-detail-house__info--text">
+                            {{alle}}</div>
+                    </ngx-simplebar>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-2">
+                <p class="c-detail-house__info--title">Religions</p>
+                <div class="c-detail-house__info--box">
+                    <ngx-simplebar style="height:100%" class="" forceVisible="true | y">
+                        <div *ngFor="let rel of house[0].religion" class="c-detail-house__info--text">
+                            {{rel}}</div>
+                    </ngx-simplebar>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-2">
+                <p class="c-detail-house__info--title">Fundation</p>
+                <div class="c-detail-house__info--box">
+                    <p class="c-detail-house__info--text">{{house[0].createdAt | date : "dd-MM-yyyy"}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+
+<div *ngIf="house">
+    <div>
+        <img src="{{house[0].logoURL}}" alt="{{house[0].name}}">
+        <h1>{{house[0].name}}</h1>
+    </div>
+    <div>
+        <div>
+            <h2>Words</h2>
+            <p>{{house[0].words}}</p>
+        </div>
+        <div>
+            <h2>Seat</h2>
+            <div *ngFor="let se of house[0].seat">
+                <p>{{se}}</p>
+            </div>
+        </div>
+        <div>
+            <h2>Region</h2>
+            <div *ngFor="let regio of house[0].region">
+                <p>{{regio}}</p>
+            </div>
+        </div>
+        <div>
+            <h2>Allegiances</h2>
+            <div *ngFor="let alle of house[0].allegiance">
+                <p>{{alle}}</p>
+            </div>
+        </div>
+        <div>
+            <h2>Religion</h2>
+            <div *ngFor="let rel of house[0].religion">
+                <p>{{rel}}</p>
+            </div>
+        </div>
+        <div>
+            <h2>Fundation</h2>
+            <p>{{house[0].createdAt | date : "dd-MM-yyyy"}}</p>
+        </div>
+
+    </div>
+
+
+   
+
+
+
+</div>
+-->

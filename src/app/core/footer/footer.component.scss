@@ -1,0 +1,32 @@
+.color_white{
+    color:white;
+}
+.c-footer{
+    width: 100%;
+    font-family:'GOT';
+    margin: 40px;
+    &__nav{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    color: white;
+    height: 80px;
+        &--link{
+            color: white;
+            font-size: 36px;
+            text-transform: uppercase;
+            padding: 0px 20px; 
+            :link{
+                text-decoration: none;
+                color: white;
+            }
+            :visited{
+                text-decoration: none;
+                color: white;
+            }
+            :hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}

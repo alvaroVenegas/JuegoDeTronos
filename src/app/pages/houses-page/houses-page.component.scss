@@ -1,0 +1,93 @@
+.c-charters__topBar{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    background-color: black;
+    border: 0px;
+   color: white;
+   &:focus {
+    border: none;
+    }
+    &:active {
+    border: none;
+    }
+}
+.test{
+    width: 25px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.c-charters_seachOverline{
+height: 2px;
+background-color: white;
+margin-right: 800px;
+margin-bottom: 20px;
+margin-left: 60px;
+}
+.c-charters__icon{
+    margin-right: 65px;
+}
+.c-charters__iconSize{
+    width: 25px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 60px;
+    margin-left: 5px;
+}
+.c-gallery__searchBar{
+  block-size: 30px;
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+.c-houses__figure {
+    width: 200px;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    }
+.c-houses__img{
+    width: 100%;
+    height: 99%;
+    object-fit: cover;
+    object-position: top;
+}
+.c-houses__title{
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+.c-detail-cronology-icons{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 26px 150px 76px 150px;
+    &__left{
+        font-size: 24px;
+        font-family: 'LATO';
+        text-align: center;
+        display: flex;
+        align-items: center;
+        &--icon{
+            padding-left:16px ;
+        }
+    }
+    &__right{
+       
+        &--icon{
+            padding-left:29px ;
+            padding-right:29px ;
+        }
+        &--home{
+            width: 62px;
+            height: 62px;
+        }
+    }
+}

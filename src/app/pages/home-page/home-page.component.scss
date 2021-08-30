@@ -1,0 +1,24 @@
+.b-home__img {
+width: 100%;
+height: 100vh;
+background-image: url("https://cdn.zeplin.io/5e1c73baff24c3be01ba9cca/assets/210f33c2-76eb-474c-a297-6774dc1dd03c.svg");
+background-color: black;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+display:flex;
+align-items: center;
+justify-content: space-around;
+}
+.b-home__text1 {
+  font-size: 100px;
+  text-align: center;
+  width: 850px;
+  color: white;
+  letter-spacing: 20px
+}
+.b-home__footer{
+  position: absolute;
+  bottom: 0;
+}
